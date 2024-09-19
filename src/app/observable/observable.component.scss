@@ -1,0 +1,55 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    small {
+        display: flex;
+        justify-content: center;
+        width: 60vw;
+        text-align: center;
+
+        /* Added for better alignment of text */
+        b {
+            font-weight: bold;
+            /* Ensures <b> behaves as bold text */
+        }
+    }
+}
+
+.btn-data {
+    background: lightcoral;
+    padding: 5rem;
+    font-size: medium;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: lightblue;
+    }
+}
+
+ul {
+    display: flex;
+
+    li {
+        list-style: none;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.observale {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+
+    .btn-data {
+        margin-top: 2rem;
+    }
+}

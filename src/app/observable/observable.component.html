@@ -1,0 +1,23 @@
+<main>
+   <button class="btn-data" (click)="getData()">
+    Get Data
+   </button>
+
+   <article>
+    <h2>Data</h2>
+    <small>Notice that *ngFor changes data continiously without rxjs
+       because of  Angular's change detection mechanism but it doesnt behave the same with console or alert without rxjs
+    </small>
+    <ul>
+      <li  *ngFor="let d of data">{{ d }}</li>
+    </ul>
+   </article>
+
+   <article class="observale">
+        <button class="btn-data" (click)="getDataObservable()">
+            Get data with observale
+        </button>
+    </article>
+
+   
+</main>

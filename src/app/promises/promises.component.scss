@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-online {
+    background: rgb(116, 222, 116);
+    border-radius: 50%;
+    padding: 5rem;
+    border: none;
+    color: darkgreen;
+}
+
+.btn-offline {
+    background: rgb(222, 116, 116);
+    border-radius: 50%;
+    padding: 5rem;
+    border: none;
+    color: darkred;
+}
