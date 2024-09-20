@@ -7,12 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PromisesComponent implements OnInit {
   status:String = 'offline';
-
+  firstTime = true;
   getStatus() {
     return new Promise<String>((resolve, reject) => {
-      setTimeout(() => {
-        resolve('online');
-      },2000);
+      setInterval(() => {
+        let status;
+        if (this.firstTime) {
+          status = 'online';
+          this.firstTime = false;
+        } else {
+          status = Math.random() > 0.5 ? 'online' : 'offline';
+        }
+        console.log(status);
+        resolve(status);
+      }, 2000);
     })
   }
   ngOnInit() {
