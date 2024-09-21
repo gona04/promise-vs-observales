@@ -1,5 +1,9 @@
+<div class="helping-instructions">
+    <h2>Check the console to understand the difference</h2>
+    <small *ngIf="!executeDisabled">If you wait for 5secs before clicking the execute button promise will resolve immidiately while observable will take 5sec from the time you click on execute</small>
+</div>
 <main>
-    <div class="circle create" (click)="create()"> Create </div>
-    <div class="circle execute" (click)="execute()"> Execute </div>
-    <div class="circle cancel" (click)="cancel()"> Cancel </div>
+    <button class="circle create" (click)="create()" > Create </button>
+    <button class="circle execute" (click)="execute()" [disabled]="executeDisabled"> Execute </button>
+    <button class="circle cancel" (click)="cancel()" [disabled]="cancelDisabled" > Cancel </button>
 </main>
