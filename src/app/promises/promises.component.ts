@@ -20,7 +20,7 @@ export class PromisesComponent implements OnInit, OnDestroy {
         } else {
           status = Math.random() > 0.5 ? 'online' : 'offline';
         }
-        console.log(status);
+        console.log('actual changed status', status);
         resolve(status);
       }, 2000);
     });
@@ -30,6 +30,7 @@ export class PromisesComponent implements OnInit, OnDestroy {
     alert('Looking at the console is important to understand the concept');
     this.getStatus().then((result: String) => {
       this.status = result;
+      console.log('status printed in promise', this.status);
     });
   }
 

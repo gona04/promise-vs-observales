@@ -7,10 +7,15 @@ ul {
     justify-content: space-around;
     li{
         list-style-type: none;
-        a{
+        a {
+            margin-right: 2rem;
             text-decoration: none;
-            color: black;
+            color: rgb(54, 82, 91);
             font-weight: bolder;
+
+            &:hover {
+                color: black;
+            }
         }
     }
 }

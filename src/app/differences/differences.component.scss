@@ -1,0 +1,29 @@
+main {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    .circle {
+        border-radius: 50%;
+        padding: 5rem;
+        border: none;
+        cursor: pointer;
+        &.create {
+            background: rgb(116, 222, 116);
+            color: rgb(57, 105, 57);
+        }
+
+        &.execute {
+            background: rgb(222, 116, 116);
+            color: rgb(114, 59, 59);
+        }
+
+        &.cancel {
+            background: rgb(116, 116, 222);
+            color: rgb(60, 60, 101);
+        }
+    }
+}

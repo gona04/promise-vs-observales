@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ObservableComponent } from './observable/observable.component';
 import { PromisesComponent } from './promises/promises.component';
 import { HeaderComponent } from './header/header.component';
+import { DifferencesComponent } from './differences/differences.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HeaderComponent } from './header/header.component';
     HomeComponent,
     ObservableComponent,
     PromisesComponent,
-    HeaderComponent
+    HeaderComponent,
+    DifferencesComponent
   ],
   imports: [
     BrowserModule,
